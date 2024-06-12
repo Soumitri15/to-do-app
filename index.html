@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do App</title>
+    <style>
+        body {
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(242, 242, 242);
+    margin: 0px;
+        }
+
+.todo-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,.4)),url('1000_F_554959404_lm3cz0YWgwDlbPo9FTDhvukjIr6mAhGd.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: white;
+}
+
+form {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+}
+
+button {
+    padding: 10px;
+    background: #2575fc;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+}
+
+button:hover {
+    background: #6a11cb;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    color: white;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+button.delete {
+    background: red;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+button.delete:hover {
+    background: darkred;
+}
+
+    </style>
+</head>
+<body>
+    <div class="todo-container">
+        <h1>To-Do List</h1>
+        <form id="todoForm">
+            <input type="text" id="todoInput" placeholder="Add a new task" required>
+            <button type="submit">Add Task</button>
+        </form>
+        <ul id="todoList"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
